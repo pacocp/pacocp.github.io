@@ -41,7 +41,9 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Washington DC","lat":38.89511,"long":-77.03637},
     {"name": "Amsterdam","lat":52.379189,"long":4.899431},
     {"name": "Philadelphia","lat":39.952583,"long":-75.165222},
-    {"name": "Cambridge","lat":52.205067,"long":0.107760}]
+    {"name": "Cambridge","lat":52.205067,"long":0.107760},
+    {"name": "Bilbo","lat":43.262985,"long":-2.935013},
+    {"name": "Donosti","lat":43.312691,"long":-1.993332}]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
