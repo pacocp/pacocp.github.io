@@ -44,7 +44,11 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Cambridge","lat":52.205067,"long":0.107760},
     {"name": "Bilbo","lat":43.262985,"long":-2.935013},
     {"name": "Donosti","lat":43.312691,"long":-1.993332},
-    {"name": "Gran Canaria","lat":28.123618,"long":-15.432873 }]
+    {"name": "Gran Canaria","lat":28.123618,"long":-15.432873 },
+    {"name": "Cáceres", "lat":39.48,"long":-6.37 },
+    {"name": "Trujillo", "lat":39.46,"long":-5.88},
+    {"name": "Trujillo", "lat":38.92,"long":-6.34},
+    {"name": "Trujillo", "lat":38.92,"long":-6.34}]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
