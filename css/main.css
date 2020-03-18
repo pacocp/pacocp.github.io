@@ -21,12 +21,12 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #696A69;
+a:hover {
+    color: #008080;
 }
 
 .active {
-    background-color: #696A69;
+    background-color: #008080;
 }
 
 .button {
@@ -41,6 +41,10 @@ li a:hover {
 }
 
 p.center{
+    text-align: center;
+}
+
+h4.center{
     text-align: center;
 }
 
@@ -90,3 +94,4 @@ p.center{
 }
 
 #map { height: 520px; border: 0px solid #AAA;}
+
