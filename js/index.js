@@ -49,7 +49,7 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Trujillo", "lat":39.46,"long":-5.88},
     {"name": "Mérida", "lat":38.92,"long":-6.34},
     {"name": "Lisbon", "lat":38.736946,"long":-9.142685},
-    {"name": "Iruela", "lat":-2.9916199, "long":37.9203757}]
+    {"name": "Iruela", "lat":37.9203757, "long":-2.9916199}]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
