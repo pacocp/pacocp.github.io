@@ -55,7 +55,7 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Santoña", "lat": 43.4414, "long": -3.4575},
     {"name": "Santillana Del Mar", "lat": 43.3891, "long": -4.1088},
     {"name": "Comillas", "lat": 43.3833, "long": -4.3},
-    {"name": "San Vicente de la Barquera", "lat": 43.4333, "long": -4.4},
+    {"name": "San Vicente de la Barquera", "lat": 43.38509, "long": -4.39934},
     {"name": "Oriñon", "lat": 43.4, "long": -3.3167}]
 
 var map = L.map( 'map', {
