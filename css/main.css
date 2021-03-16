@@ -95,3 +95,7 @@ h4.center{
 
 #map { height: 520px; border: 0px solid #AAA;}
 
+.scrollable {
+    height: 300px; /* or any value */
+    overflow-y: auto;
+}
