@@ -61,7 +61,8 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Torredonjimeno", "lat": 37.77, "long": -3.96},
     {"name": "Brussels", "lat": 50.85045, "long": 4.34878},
     {"name": "Antwerp", "lat": 51.260197, "long": 4.402771},
-    {"name": "Spa", "lat": 50.492429, "long": 5.864695}]
+    {"name": "Spa", "lat": 50.492429, "long": 5.864695},
+    {"name": "Gent", "lat": 51.0543422, "long": 3.7174243}]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
