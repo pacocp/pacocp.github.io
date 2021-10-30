@@ -69,7 +69,8 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Brugge", "lat": 51.20892, "long": 3.22424},
     {"name": "Paris", "lat": 48.85341, "long":2.3488},
     {"name": "Palo Alto", "lat": 37.468319, "long":-122.143936},
-    {"name": "Menlo Park", "lat": 37.452961, "long":-122.181725}]
+    {"name": "Menlo Park", "lat": 37.452961, "long":-122.181725},
+    {"name": "Santa Cruz", "lat": 36.974117, "long":-122.030792}]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
