@@ -73,7 +73,14 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Santa Cruz", "lat": 36.974117, "long":-122.030792},
     {"name": "San Francisco", "lat": 37.733795, "long":-122.446747},
     {"name": "Santa Monica", "lat": 34.024212, "long":-118.496475},
-    {"name": "Venice Beach", "lat": 33.9764002, "long":-118.4667452}]
+    {"name": "Venice Beach", "lat": 33.9764002, "long":-118.4667452},
+    {"name": "Camel by the sea", "lat": 36.555241, "long":-121.923286},
+    {"name": "Williams", "lat": 35.251003, "long":-112.188614},
+    {"name": "Grand Canyon National Park", "lat": 36.056595, "long":-112.125092},
+    {"name": "Las Vegas", "lat": 36.114647, "long":-115.172813},
+    {"name": "Mariposa", "lat": 37.487118, "long":-119.967690},
+    {"name": "Yosemite National Park", "lat": 37.865101, "long":-119.538330}
+    ]
 
 var map = L.map( 'map', {
   center: [51.505, -0.09],
