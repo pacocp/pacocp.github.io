@@ -81,6 +81,7 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Mariposa", "lat": 37.487118, "long":-119.967690},
     {"name": "Yosemite National Park", "lat": 37.865101, "long":-119.538330},
     {"name": "Point Reyes", "lat": 38.066667, "long":-122.883333},
+    {"name": "Castle Rock", "lat": 37.228555, "long":-122.096073,
     ]
 
 var map = L.map( 'map', {
