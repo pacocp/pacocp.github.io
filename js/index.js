@@ -82,6 +82,10 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Yosemite National Park", "lat": 37.865101, "long":-119.538330},
     {"name": "Point Reyes", "lat": 38.066667, "long":-122.883333},
     {"name": "Castle Rock", "lat": 37.228555, "long":-122.096073},
+    {"name": "Sequoia National Park", "lat": 36.486366, "long":-118.565750},
+    {"name": "Henry Cowell Redwoods State Park", "lat": 37.0235602, "long":-122.0530192},
+    {"name": "Lake Tahoe", "lat": 39.096848, "long":-120.032349},
+    {"name": "Desolation Wilderness", "lat": 38.9209672, "long": -120.1722347},
     ]
 
 var map = L.map( 'map', {
