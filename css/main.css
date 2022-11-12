@@ -22,12 +22,16 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 a:hover {
-    color: #008080;
+    color: #F7D51D;
 }
 
 .active {
     background-color: #008080;
 }
+
+.linkcolor {
+    color:#F7D51D;
+   }
 
 .button {
     background-color: #07B507; /* Green */
