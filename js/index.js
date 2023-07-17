@@ -86,6 +86,10 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Henry Cowell Redwoods State Park", "lat": 37.0235602, "long":-122.0530192},
     {"name": "Lake Tahoe", "lat": 39.096848, "long":-120.032349},
     {"name": "Desolation Wilderness", "lat": 38.9209672, "long": -120.1722347},
+    {"name": "Segovia", "lat": 40.942902, "long": -4.108807},
+    {"name": "Lagos", "lat": 37.129665, "long": -8.669586},
+    {"name": "Alvor", "lat": 37.130505, "long": -8.593506},
+    {"name": "Albufeira", "lat": 37.0854 , "long": 8.25741},
     ]
 
 var map = L.map( 'map', {
