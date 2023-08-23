@@ -90,6 +90,11 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Lagos", "lat": 37.129665, "long": -8.669586},
     {"name": "Alvor", "lat": 37.130505, "long": -8.593506},
     {"name": "Albufeira", "lat": 37.0854 , "long": 8.25741},
+    {"name": "Glasgow", "lat": 55.860916 , "long": -4.251433},
+    {"name": "Kyle of Lochalsh", "lat": 57.282607 , "long": -5.714329},
+    {"name": "Portree", "lat": 57.41247 , "long": -6.19602},
+    {"name": "Inverness", "lat": 57.477772 , "long": -4.224721},
+    {"name": "Edinburgh", "lat": 55.953251 , "long": -3.188267},
     ]
 
 var map = L.map( 'map', {
