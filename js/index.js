@@ -97,6 +97,8 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Edinburgh", "lat": 55.953251 , "long": -3.188267},
     {"name": "Santiago de Chile", "lat": -33.45694 , "long": -70.64827},
     {"name": "San José de Maipo", "lat": -33.643169 , "long": -70.345207},
+    {"name": "Valparaiso", "lat": -33.036 , "long": -71.62963},
+    {"name": "Viña del Mar", "lat": -33.02457 , "long": -71.55183},
     ]
 
 var map = L.map( 'map', {
