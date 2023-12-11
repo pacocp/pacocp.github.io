@@ -100,6 +100,9 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Valparaiso", "lat": -33.036 , "long": -71.62963},
     {"name": "Viña del Mar", "lat": -33.02457 , "long": -71.55183},
     {"name": "Puerto Varas", "lat": -41.31946 , "long": -72.98538},
+    {"name": "Punta Arenas", "lat": -53.15483 , "long": -70.91129},
+    {"name": "Puerto Natales", "lat": -51.72363 , "long": -72.48745},
+    {"name": "Parque Nacional Torres del Paine", "lat": -50.98305556 , "long": -72.96638889},
     ]
 
 var map = L.map( 'map', {
