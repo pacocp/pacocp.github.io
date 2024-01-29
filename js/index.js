@@ -103,6 +103,7 @@ var markers =[{"name": "Madrid","lat":40.4893538,"long": -3.6827461},
     {"name": "Punta Arenas", "lat": -53.15483 , "long": -70.91129},
     {"name": "Puerto Natales", "lat": -51.72363 , "long": -72.48745},
     {"name": "Parque Nacional Torres del Paine", "lat": -50.98305556 , "long": -72.96638889},
+    {"name": "Almadén de la plata", "lat": 37.87221000, "long": -6.08085000},
     ]
 
 var map = L.map( 'map', {
