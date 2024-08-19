@@ -109,6 +109,7 @@ var markers = [{ "name": "Madrid", "lat": 40.4893538, "long": -3.6827461 },
 { "name": "Pontevedra", "lat": 42.431, "long": -8.64435 },
 { "name": "Vigo", "lat": 42.231358, "long": -8.712447 },
 { "name": "Puebla de Sanabria", "lat": 42.0546898, "long": -6.6339736 },
+{ "name": "Islas Cíes", "lat": 37.8857504, "long": -4.8001831 },
 ]
 
 var map = L.map('map', {
