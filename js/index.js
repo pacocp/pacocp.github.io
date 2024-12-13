@@ -119,7 +119,7 @@ var markers = [
   { name: "Vigo", lat: 42.231358, long: -8.712447 },
   { name: "Puebla de Sanabria", lat: 42.0546898, long: -6.6339736 },
   { name: "Islas Cíes", lat: 37.8857504, long: -4.8001831 },
-  { name: "Chamonix", lat: 45.92375, long: 6.86933 },
+  { name: "Chamonix", lat: 45.92375, long: 6.869333 },
 ];
 
 var map = L.map("map", {
