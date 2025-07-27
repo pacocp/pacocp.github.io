@@ -120,6 +120,10 @@ var markers = [
   { name: "Puebla de Sanabria", lat: 42.0546898, long: -6.6339736 },
   { name: "Islas Cíes", lat: 37.8857504, long: -4.8001831 },
   { name: "Chamonix", lat: 45.92375, long: 6.869333 },
+  { name: "Ljubljana", lat: 46.05108, long: 14.505751 },
+  { name: "Bohinj", lat: 46.28556, long: 13.86194 },
+  { name: "Bled", lat: 46.361618, long: 14.095287 },
+  { name: "Kranjska Gora", lat: 46.45689, long: 13.77824 },
 ];
 
 var map = L.map("map", {
