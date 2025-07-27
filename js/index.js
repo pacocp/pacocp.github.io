@@ -24,7 +24,6 @@ var markers = [
   { name: "Milano", lat: 45.4642715, long: 9.1895103 },
   { name: "Bergamo", lat: 45.6960106, long: 9.6672096 },
   { name: "Turin", lat: 45.0704918, long: 7.68682 },
-  { name: "Venezia", lat: 45.4408474, long: 12.3155151 },
   { name: "Genova", lat: 44.4047813, long: 8.9443903 },
   { name: "Verona", lat: 45.4299011, long: 10.9844398 },
   { name: "Venezia", lat: 43.96684, long: 12.73197 },
