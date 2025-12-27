@@ -123,6 +123,8 @@ var markers = [
   { name: "Bohinj", lat: 46.28556, long: 13.86194 },
   { name: "Bled", lat: 46.361618, long: 14.095287 },
   { name: "Kranjska Gora", lat: 46.45689, long: 13.77824 },
+  { name: "La Jolla", lat: 32.8419914, long: -117.2730168 },
+  { name: "San Diego", lat: 32.71576, long: -117.1638173 },
 ];
 
 var map = L.map("map", {
