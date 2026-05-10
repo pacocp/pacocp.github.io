@@ -95,6 +95,33 @@ h4.center{
 
 #map { height: 520px; border: 0px solid #AAA;}
 
+.experience-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-date {
+    display: block;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.experience-title {
+    margin: 0 0 8px;
+    color: #0e3f3f;
+}
+
+.experience-item p {
+    margin: 0;
+    color: #333;
+    line-height: 1.65;
+}
+
 .scrollable {
     height: 300px; /* or any value */
     overflow-y: auto;
