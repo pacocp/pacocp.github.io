@@ -125,6 +125,13 @@ var markers = [
   { name: "Kranjska Gora", lat: 46.45689, long: 13.77824 },
   { name: "La Jolla", lat: 32.8419914, long: -117.2730168 },
   { name: "San Diego", lat: 32.71576, long: -117.1638173 },
+  { name: "Saint Jean de Luz", lat: 43.3887, long: -1.6628 },
+  { name: "Biarritz", lat: 43.4832, long: -1.5586 },
+  { name: "Bayonne", lat: 43.4933, long: -1.4751 },
+  { name: "Zugarramurdi", lat: 43.2674, long: -1.5425 },
+  { name: "Gavarnie", lat: 42.7336, long: -0.0089 },
+  { name: "Sare", lat: 43.3128, long: -1.5797 },
+  { name: "Ainhoa", lat: 43.3067, long: -1.4989 },
 ];
 
 var map = L.map("map", {
@@ -133,10 +140,11 @@ var map = L.map("map", {
   zoom: 1,
 });
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
   attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright" referrerpolicy="origin">OpenStreetMap</a>',
-  subdomains: ["a", "b", "c"],
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: ["a", "b", "c", "d"],
+  maxZoom: 20,
 }).addTo(map);
 
 var myURL = jQuery('script[src$="index.js"]')

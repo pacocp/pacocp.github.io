@@ -1,385 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francisco Carrillo-Perez</title>
+  <meta name="description" content="Francisco (Paco) Carrillo-Perez — Principal Scientist, Imaging AI at Bristol Myers Squibb. Machine learning for cancer research: multimodal self-supervised learning and generative models.">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-crossorigin=""/>
- <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-   crossorigin=""></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel='shortcut icon' type="image/x-icon" href='https://github.com/pacocp/pacocp.github.io/favicon.ico?'/>
-<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
-<title>Francisco Carrillo Pérez</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/main.css">
-<link rel="stylesheet" href="./css/animate.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6,p,a {font-family: 'Anaheim';}
-</style>
-<body class="w3-light-grey">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Francisco Carrillo-Perez">
+  <meta property="og:description" content="Principal Scientist, Imaging AI at Bristol Myers Squibb. Multimodal self-supervised learning and generative models for cancer research.">
+  <meta property="og:url" content="https://pacocp.github.io/">
+  <meta property="og:image" content="https://pacocp.github.io/img/about.jpg">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+</head>
+<body>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+  <header>
+    <h1>Francisco Carrillo-Perez</h1>
+    <nav>
+      <a href="index.html" class="active" aria-current="page">About</a>
+      <a href="./pages/publications.html">Publications</a>
+      <a href="./pages/code.html">Research Code</a>
+    </nav>
+  </header>
 
-    <!-- Left Column -->
-    <div class="w3-third fadeInDown animated">
+  <main>
 
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="img/about.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Francisco Carrillo-Perez</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html" >About</a></li>
-                    <li><a href="./pages/publications.html" >Publications</a></li>
-                    <li><a href="./pages/code.html">Research Code</a></li>
-                 </ul>
-                 <hr>
-              </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PhD in machine learning applied to bioinformatics.</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Granada (Spain)</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>carrilloperezfrancisco <i>at</i> gmail <i>dot</i> com</p>
-          <p><a href="https://pacocp.github.io/blog/" target="_blank"><i class="fa fa-sticky-note-o fa-fw w3-margin-right w3-large w3-text-teal"></i>My blog</a></p>
-          <p><a href="https://www.researchgate.net/profile/Francisco_Carrillo-Perez" target="_blank"><i class="fa fa-file-text fa-fw w3-margin-right w3-large w3-text-teal"></i>Researchgate</a></p>
-          <p><a href="https://scholar.google.com/citations?user=KqHbnTkAAAAJ&hl=en" target="_blank"><i class="fa fa-file-text fa-fw w3-margin-right w3-large w3-text-teal"></i>Google Scholar</a></p>
-          <p><a href="https://cv.pacocp.es/" target="_blank"><i class="fa fa-file-text fa-fw w3-margin-right w3-large w3-text-teal"></i>CV</a></p>
-          <a href="https://github.com/pacocp" target="_blank"><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>pacocp</a>
-          <a href="https://twitter.com/pacocp9" target="_blank"><i class="fa fa-twitter fa-fw w3-margin-right w3-large w3-text-teal"></i>pacocp9</a>
-          <a href="https://www.linkedin.com/in/franciscocp/" target="_blank"><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>franciscocp</a>
-          <hr>
-
-      </div>
-
-    </div>
-
-
-      <br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-
-    <div class="w3-twothird bounceInRight animated">
-
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-            <h2 class="w3-text-teal w3-padding-16">About me</h2>
-            My name is Francisco (Paco) Carrillo-Perez, and I hold a Ph.D. in machine learning applied to bioinformatics from the University of Granada.
-            I am working now as a Principal Scientist, Imaging AI at Bristol Myers
-            Squibb. I am mainly interested in multi-modal self-supervised learning and generative models for cancer research.
-            In my spare time I like to climb, take long
-        hikes, and read
-        a good <a target="_blank"
-                 href="https://www.goodreads.com/user/show/89605763-francisco-carrillo">
-          <u>book</u></a>!
-
-      </p>
-      </div>
-
-      <!-- Work experience -->
-      <!-- <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-teal w3-padding-16">Work experience</h2> -->
-        <!-- Stanford -->
-        <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h4 class="center">Stanford University </h4><strong> Visiting
-            Student Researcher (Fulbright grant)</strong> </a> </h4>
-          <p class="center"><i>Oct 2021-September 2022</i>.</p>
-          <p>
-            Visiting Student Researcher at the Stanford Center for
-            Biomedical Informatics Research (BMIR) with a Fulbright scholarship
-            under the supervision of Prof. Olivier Gevaert.
-          </p>
-        </div>-->
-        <!-- University of Granada -->
-        <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h4 class="center">University of Granada </h4><strong> Predoctoral
-            Researcher/FPI Scholarship </strong> </a> </h4>
-          <p class="center"><i>November 2019-September 2020-Nowadays</i>.</p>
-          <p>Predoctoral researcher in the CASIP group. Working in the
-          integration of heterogeneous sources of biological information for
-          cancer classification.
-          </p>
-        </div>-->
-        <!-- mDurance -->
-        <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h4 class="center"> <a href="http://www.mdurance.eu" target="_blank"><strong> mDurance - eHealth Intelligent Solutions </strong> </a> </h4>
-        <p class="center"><i>September 2017-March 2019</i>.</p>
-        <p>Working as a Data Scientist for the company, developing data mining and machine learning techniques for prediction and clustering.</p>
-        </div>
-     </div>-->
-
-     <!-- Education -->
-     <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-      <h2 class="w3-text-teal w3-padding-16">Education</h2>-->
-          <!-- PhD -->
-          <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h4 class="center"> <i> PhD in Bioinformatics </i></h4>
-          <p class="center"> 2019-Nowadays: University of Granada (Spain) </p>
-          </div>-->
-          <!-- Master -->
-          <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h4 class="center"> <i> MSc Data Science and Computer Engineering </i></h4>
-          <p class="center"> 2018-2019: University of Granada (Spain) </p>
-          </div>-->
-          <!-- Degree -->
-          <!--<div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-          <h4 class="center"> <i>Computer Science Degree</i></h4>
-          <p class="center"> 2013-2018: University of Granada (Spain) </p>
-          <p class="center"> 2016-2017: Politecnico di Milano (Italy){ERASMUS+ PROGRAM} </p>
-          </div>
-    </div>-->
-
-    <!-- Blog section -->
-    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">      <h2 class="w3-text-teal w3-padding-16">Work experience</h2>
-        <div class="experience-item">
-          <div class="experience-date">2026 – Present</div>
-          <h4 class="experience-title">Principal Scientist, Imaging AI</h4>
-          <p>Bristol Myers Squibb — Leading generative and self-supervised learning research for precision oncology.</p>
-        </div>
-        <div class="experience-item">
-          <div class="experience-date">2024 – 2026</div>
-          <h4 class="experience-title">Senior Scientist, Imaging AI</h4>
-          <p>Bristol Myers Squibb — Developed multimodal AI methods for cancer research and digital pathology.</p>
-        </div>
-        <div class="experience-item">
-          <div class="experience-date">2023 – 2024</div>
-          <h4 class="experience-title">Postdoctoral Researcher</h4>
-          <p>Stanford University — Developing multimodal AI methods for cancer research.</p>
-        </div>
-        <div class="experience-item">
-          <div class="experience-date">2019 – 2023</div>
-          <h4 class="experience-title">Ph.D. Student</h4>
-          <p>University of Granada — Working in the integration of heterogeneous sources of biological information for cancer classification. Fulbright Scholar at Stanford University.</p>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">      <h2 class="w3-text-teal w3-padding-16">Selected posts from my blog</h2>
+    <!-- Intro -->
+    <section class="intro">
+      <img src="img/about.jpg" class="intro-image" alt="Francisco Carrillo-Perez">
+      <div class="intro-text">
         <p>
-          I have a blog where I write about my research and other topics that I find interesting. Here you can find some of the most recent posts:
+          Hi! I'm Paco &mdash; a Principal Scientist, Imaging AI at
+          <a href="https://www.bms.com/" target="_blank" rel="noopener">Bristol Myers Squibb</a>,
+          where I work on multi-modal self-supervised learning and generative models for cancer research.
+          I hold a Ph.D. in machine learning applied to bioinformatics from the University of Granada,
+          and I was a Fulbright Scholar and Postdoctoral Researcher at Stanford University.
         </p>
-          <ul><a href="https://pacocp.es/blog/multimodal-ai-foundation-models-that-combine-digital-pathology--transcriptomics-what-has-been-done-and-what-is-coming/">Multimodal AI foundation models that combine digital pathology + transcriptomics: what has been done and what is coming</a></ul>
-          <ul><a href="https://pacocp.es/blog/do-i-even-know-what-i-am-doing-reflections-on-the-use-of-ai-coding-assistants-for-ml-work./">Do I even know what I am doing? Reflections on the use of AI coding assistants for ML work.</a></ul>
-    </div>
-    
-    <!-- News section -->
-    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-      <h2 class="w3-text-teal w3-padding-16">Recent News</h2>
-    <div class="scrollable">
-      <!-- Your table -->
-      <table>
-        <table>
-            <tr>
-              <td class="newsdate">
-                <b>23/12/2024</b>
-              </td>
-              <td class="news">
-                  New comment published in Nature Biomedical Engineering:  <a href="https://www.nature.com/articles/s41551-024-01324-1" target="_blank">Synthetic multimodal data modelling for data imputation</a>.
-            <tr>
-              <td class="newsdate">
-                  <b>14/10/2024</b>
-              </td>
-              <td class="news">
-                  New manuscript published in Nature Communications:  <a href="https://www.nature.com/articles/s41467-024-54182-5" target="_blank">Digital profiling of gene expression from histology images with linearized attention</a>.
-            <tr>
-              <td class="newsdate">
-                  <b>21/08/2024</b>
-              </td>
-              <td class="news">
-                  New preprint available in bioArxiv:  <a href="https://www.biorxiv.org/content/10.1101/2024.08.19.608555v1" target="_blank">Towards Digital Quantification of Ploidy from Pan-Cancer Digital Pathology Slides using Deep Learning</a>.
-              </td>
-          </tr>
-          <tr>
-            <td class="newsdate">
-                <b>02/05/2024</b>
-            </td>
-            <td class="news">
-                Invited talk at the Institute of Data Science and Artifificial Intelligence, University of Navarra:  <a href="https://en.unav.edu/web/institute-for-data-science-and-artificial-intelligence/actuality/seminarios/curso-2023-24" target="_blank">video and slides here</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>21/03/2024</b>
-            </td>
-            <td class="news">
-                New published publication in Nature Biomedical Engineering:  <a href="https://www.nature.com/articles/s41551-024-01193-8" target="_blank">Generation of synthetic whole-slide image tiles of tumours from RNA-sequencing data via cascaded diffusion models</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>06/03/2024</b>
-            </td>
-            <td class="news">
-                New published publication in SoftwareX:  <a href="https://www.sciencedirect.com/science/article/pii/S2352711024000190" target="_blank">SnapperML: A python-based framework to improve machine learning operations</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>29/01/2024</b>
-            </td>
-            <td class="news">
-                New published publication in Cell Reports Methods:  <a href="https://www.sciencedirect.com/science/article/pii/S2667237524000018" target="_blank">A 3D lung lesion variational autoencoder</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>19/07/2023</b>
-            </td>
-            <td class="news">
-                New published publication in Cell Reports Methods:  <a href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00171-6" target="_blank">Synthetic whole-slide image tile generation with gene expression profile-infused deep generative models</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>12/07/2023</b>
-            </td>
-            <td class="news">
-                New published publication in Nature Communications:  <a href="https://www.nature.com/articles/s41467-023-39933-0" target="_blank">Spatial cellular architecture predicts prognosis in glioblastoma</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>27/06/2023</b>
-            </td>
-            <td class="news">
-                New published publication in Cancer Imaging:  <a href="https://cancerimagingjournal.biomedcentral.com/articles/10.1186/s40644-023-00586-3" target="_blank">Performance comparison between multi-center histopathology datasets of a weakly-supervised deep learning model for pancreatic ductal adenocarcinoma detection</a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>02/06/2023</b>
-            </td>
-            <td class="news">
-                Invited talk at the <a href="https://www.cabd.es/en/" target="_blank">Centro Andaluz de Biología del Desarrollo</a> to talk about cross-modal synthetic data generation.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>01/04/2023</b>
-            </td>
-            <td class="news">
-                Colleagues will be presenting our work at ACCR, you can check abstract here: <a href="https://aacrjournals.org/cancerres/article/83/7_Supplement/4270/723324/Abstract-4270-Prediction-of-cancer-transcriptomes" target="_blank"><u>Prediction of cancer transcriptomes from whole-slide images with Vis-Gene</u></a>.
-            </td>
-        </tr>
-          <tr>
-            <td class="newsdate">
-                <b>04/03/2023</b>
-            </td>
-            <td class="news">
-                New published publication in Nature Medicine: <a href="https://www.nature.com/articles/s41591-023-02225-7" target="_blank"><u>A deep-learning algorithm to classify skin lesions from mpox virus infection</u></a>.
-            </td>
-        </tr>
-        <tr>
-          <td class="newsdate">
-              <b>01/03/2023</b>
-          </td>
-          <td class="news">
-              Happy to rejoin the Gevaert's lab as a Freelance Postdoctoral Researcher!.
-          </td>
-      </tr>
-          <tr>
-            <td class="newsdate">
-                <b>02/12/2022</b>
-            </td>
-            <td class="news">
-                New published publication in Trends in Molecular Medicine: <a href="https://www.sciencedirect.com/science/article/abs/pii/S1471491422002921" target="_blank"><u>Imaging genomics: data fusion in uncovering disease heritability</u></a>.
-            </td>
-        </tr>
-        <tr>
-          <td class="newsdate">
-              <b>10/04/2022</b>
-          </td>
-          <td class="news">
-              New published publication in the Journal of Personalized Medicine: <a href="https://www.mdpi.com/2075-4426/12/4/601" target="_blank">Machine-Learning-Based Late Fusion on Multi-Omics and Multi-Scale Data for Non-Small-Cell Lung Cancer Diagnosis</a>.
-          </td>
-      </tr>
-        <tr>
-          <td class="newsdate">
-              <b>29/11/2021</b>
-          </td>
-          <td class="news">
-              New published publication in the Journal of Esthetic and Restorative Dentistry: <a href="https://onlinelibrary.wiley.com/doi/10.1111/jerd.12844" target="_blank">Applications of artificial intelligence in dentistry: A comprehensive review</a>.
-          </td>
-      </tr>
-        <tr>
-          <td class="newsdate">
-              <b>22/09/2021</b>
-          </td>
-          <td class="news">
-              New published publication in the BMC Bioinformatics journal: <a href="https://rdcu.be/cyCWt" target="_blank">Non-small-cell lung cancer classification via RNA-Seq and histology imaging probability fusion</a>.
-          </td>
-      </tr>
-      <tr>
-          <td class="newsdate">
-              <b>19/04/2021</b>
-          </td>
-          <td class="news">
-              New published publication in the Computers in Biology and Medicine journal: <a href="https://www.sciencedirect.com/science/article/pii/S0010482521001815" target="_blank">KnowSeq R-Bioc Package: The Automatic Smart Gene Expression Tool For Retrieving Relevant Biological Knowledge</a>.
-          </td>
-      </tr>
-      <tr>
-        <td class="newsdate">
-            <b>12/04/2021</b>
-        </td>
-        <td class="news">
-            Honored to become a Fulbright fellow! I will do a twelve-month research collaboration at
-            Stanford University under the supervision of <a href="https://profiles.stanford.edu/olivier-gevaert" target="_blank">Professor Olivier Geavert</a>
-            starting October 2021.
-        </td>
-      </tr>
-        <tr>
-          <td class="newsdate">
-              <b>22/03/2021</b>
-          </td>
-          <td class="news">
-              New published publication in the Journal of Dentistry: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0300571221000610?via%3Dihub" target="_blank">INFLUENCE OF BACKGROUND COLOR ON COLOR PERCEPTION IN DENTISTRY</a>
-          </td>
-      </tr>
-        <tr>
-          <td class="newsdate">
-              <b>19/02/2021</b>
-          </td>
-          <td class="news">
-              New published publication in the Neural Computing and Applications journal: <a href="https://link.springer.com/article/10.1007/s00521-020-05679-9" target="_blank">Deep learning to classify ultra-high-energy cosmic rays by means of PMT signals</a>
-          </td>
-      </tr>
-      </table>
-    </div>
-  </div>
+        <p>
+          In my spare time I like to climb, take long hikes, and read a good
+          <a href="https://www.goodreads.com/user/show/89605763-francisco-carrillo" target="_blank" rel="noopener">book</a>!
+        </p>
+        <p class="intro-location">Granada, Spain &middot; carrilloperezfrancisco <i>at</i> gmail <i>dot</i> com</p>
+        <div class="intro-links">
+          <a href="https://scholar.google.com/citations?user=KqHbnTkAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+          </a>
+          <a href="https://www.researchgate.net/profile/Francisco_Carrillo-Perez" title="ResearchGate" aria-label="ResearchGate" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg>
+          </a>
+          <a href="https://github.com/pacocp" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/franciscocp/" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://cv.pacocp.es/" title="CV" aria-label="CV" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </a>
+          <a href="mailto:carrilloperezfrancisco@gmail.com" title="Email" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
 
-     <!-- Where have you beeen -->
-     <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-      <h2 class="w3-text-teal w3-padding-16">Where have you been?</h2>
+    <!-- Work experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="exp-item">
+        <span class="exp-date">2026 &ndash; Present</span>
+        <h3>Principal Scientist, Imaging AI</h3>
+        <p>Bristol Myers Squibb &mdash; Leading generative and self-supervised learning research for precision oncology.</p>
+      </div>
+      <div class="exp-item">
+        <span class="exp-date">2024 &ndash; 2026</span>
+        <h3>Senior Scientist, Imaging AI</h3>
+        <p>Bristol Myers Squibb &mdash; Developed multimodal AI methods for cancer research and digital pathology.</p>
+      </div>
+      <div class="exp-item">
+        <span class="exp-date">2023 &ndash; 2024</span>
+        <h3>Postdoctoral Researcher</h3>
+        <p>Stanford University &mdash; Developing multimodal AI methods for cancer research.</p>
+      </div>
+      <div class="exp-item">
+        <span class="exp-date">2019 &ndash; 2023</span>
+        <h3>Ph.D. Student</h3>
+        <p>University of Granada &mdash; Working in the integration of heterogeneous sources of biological information for cancer classification. Fulbright Scholar at Stanford University.</p>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <h2>News <sup><button class="view-toggle" id="news-toggle" type="button">[all]</button></sup></h2>
+      <ul class="timeline">
+<li>
+          <span class="entry-date">23/12/2024</span>
+          <p>New comment published in Nature Biomedical Engineering: <a href="https://www.nature.com/articles/s41551-024-01324-1" target="_blank" rel="noopener">Synthetic multimodal data modelling for data imputation</a>.</p>
+        </li>
+<li>
+          <span class="entry-date">14/10/2024</span>
+          <p>New manuscript published in Nature Communications: <a href="https://www.nature.com/articles/s41467-024-54182-5" target="_blank" rel="noopener">Digital profiling of gene expression from histology images with linearized attention</a>.</p>
+        </li>
+<li>
+          <span class="entry-date">21/08/2024</span>
+          <p>New preprint available in bioArxiv: <a href="https://www.biorxiv.org/content/10.1101/2024.08.19.608555v1" target="_blank" rel="noopener">Towards Digital Quantification of Ploidy from Pan-Cancer Digital Pathology Slides using Deep Learning</a>.</p>
+        </li>
+<li>
+          <span class="entry-date">02/05/2024</span>
+          <p>Invited talk at the Institute of Data Science and Artificial Intelligence, University of Navarra: <a href="https://en.unav.edu/web/institute-for-data-science-and-artificial-intelligence/actuality/seminarios/curso-2023-24" target="_blank" rel="noopener">video and slides here</a>.</p>
+        </li>
+<li>
+          <span class="entry-date">21/03/2024</span>
+          <p>New published publication in Nature Biomedical Engineering: <a href="https://www.nature.com/articles/s41551-024-01193-8" target="_blank" rel="noopener">Generation of synthetic whole-slide image tiles of tumours from RNA-sequencing data via cascaded diffusion models</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">06/03/2024</span>
+          <p>New published publication in SoftwareX: <a href="https://www.sciencedirect.com/science/article/pii/S2352711024000190" target="_blank" rel="noopener">SnapperML: A python-based framework to improve machine learning operations</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">29/01/2024</span>
+          <p>New published publication in Cell Reports Methods: <a href="https://www.sciencedirect.com/science/article/pii/S2667237524000018" target="_blank" rel="noopener">A 3D lung lesion variational autoencoder</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">19/07/2023</span>
+          <p>New published publication in Cell Reports Methods: <a href="https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00171-6" target="_blank" rel="noopener">Synthetic whole-slide image tile generation with gene expression profile-infused deep generative models</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">12/07/2023</span>
+          <p>New published publication in Nature Communications: <a href="https://www.nature.com/articles/s41467-023-39933-0" target="_blank" rel="noopener">Spatial cellular architecture predicts prognosis in glioblastoma</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">27/06/2023</span>
+          <p>New published publication in Cancer Imaging: <a href="https://cancerimagingjournal.biomedcentral.com/articles/10.1186/s40644-023-00586-3" target="_blank" rel="noopener">Performance comparison between multi-center histopathology datasets of a weakly-supervised deep learning model for pancreatic ductal adenocarcinoma detection</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">02/06/2023</span>
+          <p>Invited talk at the <a href="https://www.cabd.es/en/" target="_blank" rel="noopener">Centro Andaluz de Biología del Desarrollo</a> to talk about cross-modal synthetic data generation.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">01/04/2023</span>
+          <p>Colleagues will be presenting our work at ACCR, you can check abstract here: <a href="https://aacrjournals.org/cancerres/article/83/7_Supplement/4270/723324/Abstract-4270-Prediction-of-cancer-transcriptomes" target="_blank" rel="noopener">Prediction of cancer transcriptomes from whole-slide images with Vis-Gene</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">04/03/2023</span>
+          <p>New published publication in Nature Medicine: <a href="https://www.nature.com/articles/s41591-023-02225-7" target="_blank" rel="noopener">A deep-learning algorithm to classify skin lesions from mpox virus infection</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">01/03/2023</span>
+          <p>Happy to rejoin the Gevaert's lab as a Freelance Postdoctoral Researcher!</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">02/12/2022</span>
+          <p>New published publication in Trends in Molecular Medicine: <a href="https://www.sciencedirect.com/science/article/abs/pii/S1471491422002921" target="_blank" rel="noopener">Imaging genomics: data fusion in uncovering disease heritability</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">10/04/2022</span>
+          <p>New published publication in the Journal of Personalized Medicine: <a href="https://www.mdpi.com/2075-4426/12/4/601" target="_blank" rel="noopener">Machine-Learning-Based Late Fusion on Multi-Omics and Multi-Scale Data for Non-Small-Cell Lung Cancer Diagnosis</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">29/11/2021</span>
+          <p>New published publication in the Journal of Esthetic and Restorative Dentistry: <a href="https://onlinelibrary.wiley.com/doi/10.1111/jerd.12844" target="_blank" rel="noopener">Applications of artificial intelligence in dentistry: A comprehensive review</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">22/09/2021</span>
+          <p>New published publication in the BMC Bioinformatics journal: <a href="https://rdcu.be/cyCWt" target="_blank" rel="noopener">Non-small-cell lung cancer classification via RNA-Seq and histology imaging probability fusion</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">19/04/2021</span>
+          <p>New published publication in the Computers in Biology and Medicine journal: <a href="https://www.sciencedirect.com/science/article/pii/S0010482521001815" target="_blank" rel="noopener">KnowSeq R-Bioc Package: The Automatic Smart Gene Expression Tool For Retrieving Relevant Biological Knowledge</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">12/04/2021</span>
+          <p>Honored to become a Fulbright fellow! I will do a twelve-month research collaboration at Stanford University under the supervision of <a href="https://profiles.stanford.edu/olivier-gevaert" target="_blank" rel="noopener">Professor Olivier Gevaert</a> starting October 2021.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">22/03/2021</span>
+          <p>New published publication in the Journal of Dentistry: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0300571221000610?via%3Dihub" target="_blank" rel="noopener">Influence of background color on color perception in dentistry</a>.</p>
+        </li>
+<li class="extra">
+          <span class="entry-date">19/02/2021</span>
+          <p>New published publication in the Neural Computing and Applications journal: <a href="https://link.springer.com/article/10.1007/s00521-020-05679-9" target="_blank" rel="noopener">Deep learning to classify ultra-high-energy cosmic rays by means of PMT signals</a>.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Selected posts <sup><a href="https://pacocp.github.io/blog/" target="_blank" rel="noopener">[all]</a></sup></h2>
+      <ul class="timeline">
+        <li>
+          <h3><a href="https://pacocp.es/blog/multimodal-ai-foundation-models-that-combine-digital-pathology--transcriptomics-what-has-been-done-and-what-is-coming/" target="_blank" rel="noopener">Multimodal AI foundation models that combine digital pathology + transcriptomics</a></h3>
+          <p class="muted">A tour of cross-modal imputation and representation learning between H&amp;E slides and RNA-Seq &mdash; what has been done, and what spatial transcriptomics will bring next.</p>
+          <span class="entry-date right">02/05/2026</span>
+        </li>
+        <li>
+          <h3><a href="https://pacocp.es/blog/do-i-even-know-what-i-am-doing-reflections-on-the-use-of-ai-coding-assistants-for-ml-work./" target="_blank" rel="noopener">Do I even know what I am doing? Reflections on the use of AI coding assistants for ML work</a></h3>
+          <p class="muted">AI coding assistants make us more productive &mdash; but are they also dulling our engineering skills? Some personal reflections.</p>
+          <span class="entry-date right">26/04/2026</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Travel map -->
+    <section id="travel">
+      <h2>Where have you been?</h2>
       <div id="map"></div>
-      <script type='text/javascript' src='./js/index.js'></script>
-     </div>
+      <p class="map-caption">places I've visited</p>
+    </section>
 
+  </main>
 
-    <!-- End Right Column -->
-    </div>
+  <footer>
+    <p>&copy; 2026 Francisco Carrillo-Perez &middot; Made with love by <a href="https://github.com/pacocp" target="_blank" rel="noopener">Paco</a></p>
+  </footer>
 
-  <!-- End Grid -->
-  </div>
-
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-
-  <p>Made with love by <a href="https://github.com/pacocp" target="_blank">Paco</a></p>
-</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script>
+    // News [all]/[less] toggle
+    (function () {
+      var toggle = document.getElementById('news-toggle');
+      if (!toggle) return;
+      var extras = document.querySelectorAll('#news .timeline li.extra');
+      toggle.addEventListener('click', function () {
+        var showing = toggle.getAttribute('data-showing') === '1';
+        for (var i = 0; i < extras.length; i++) {
+          extras[i].classList.toggle('shown', !showing);
+        }
+        toggle.setAttribute('data-showing', showing ? '0' : '1');
+        toggle.textContent = showing ? '[all]' : '[less]';
+      });
+    })();
+  </script>
 
 </body>
 </html>
