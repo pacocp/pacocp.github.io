@@ -135,9 +135,11 @@ var markers = [
 ];
 
 var map = L.map("map", {
-  center: [51.505, -0.09],
-  minZoom: 2,
+  center: [30, -30],
+  minZoom: 1,
   zoom: 2,
+  zoomSnap: 0.25,
+  worldCopyJump: true,
 });
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -147,39 +149,26 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   className: "muted-tiles",
 }).addTo(map);
 
-var myURL = jQuery('script[src$="index.js"]')
-  .attr("src")
-  .replace("index.js", "");
-var myIcon = L.icon({
-  iconUrl: myURL + "../img/pin24.png",
-  iconRetinaUrl: myURL + "../img/pin48.png",
-  iconSize: [29, 24],
-  iconAnchor: [9, 21],
-  popupAnchor: [0, -14],
-});
+var accent =
+  getComputedStyle(document.documentElement)
+    .getPropertyValue("--accent")
+    .trim() || "#1f6f6b";
 
 for (var i = 0; i < markers.length; ++i) {
-  var popup = "<a>" + markers[i].name + "</a>";
-
-  L.marker([markers[i].lat, markers[i].long], { icon: myIcon })
-    .bindPopup(popup)
+  L.circleMarker([markers[i].lat, markers[i].long], {
+    radius: 4,
+    color: "#ffffff",
+    weight: 1,
+    fillColor: accent,
+    fillOpacity: 0.75,
+  })
+    .bindTooltip(markers[i].name, { direction: "top", offset: [0, -4] })
     .addTo(map);
-
-  /*markerClusters.addLayer(m).addTo(map);*/
 }
 
 map.fitBounds(
   markers.map(function (m) {
     return [m.lat, m.long];
   }),
-  { paddingTopLeft: [20, 40], paddingBottomRight: [20, 20] }
+  { padding: [20, 20] }
 );
-
-/*
-for ( var i=0; i < markers.length; ++i )
-{
-   L.marker( [markers[i].lat, markers[i].long], {icon: myIcon} )
-      .bindPopup( '<a href="' + markers[i].name + '" target="_blank">' + markers[i].address + '</a>' )
-      .addTo( map );
-}
-*/
