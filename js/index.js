@@ -132,6 +132,7 @@ var markers = [
   { name: "Gavarnie", lat: 42.7336, long: -0.0089 },
   { name: "Sare", lat: 43.3128, long: -1.5797 },
   { name: "Ainhoa", lat: 43.3067, long: -1.4989 },
+  { name: "Seattle", lat: 47.6062, long: -122.3321 },
 ];
 
 var map = L.map("map", {
