@@ -26,7 +26,7 @@ var markers = [
   { name: "Turin", lat: 45.0704918, long: 7.68682 },
   { name: "Genova", lat: 44.4047813, long: 8.9443903 },
   { name: "Verona", lat: 45.4299011, long: 10.9844398 },
-  { name: "Venezia", lat: 43.96684, long: 12.73197 },
+  { name: "Venezia", lat: 45.4408, long: 12.3155 },
   { name: "Roma", lat: 41.890251, long: 12.492373 },
   { name: "Bucarest", lat: 44.432251, long: 26.1062603 },
   { name: "Craiova", lat: 44.3166695, long: 23.7999992 },
@@ -93,7 +93,7 @@ var markers = [
   { name: "Segovia", lat: 40.942902, long: -4.108807 },
   { name: "Lagos", lat: 37.129665, long: -8.669586 },
   { name: "Alvor", lat: 37.130505, long: -8.593506 },
-  { name: "Albufeira", lat: 37.0854, long: 8.25741 },
+  { name: "Albufeira", lat: 37.0854, long: -8.25741 },
   { name: "Glasgow", lat: 55.860916, long: -4.251433 },
   { name: "Kyle of Lochalsh", lat: 57.282607, long: -5.714329 },
   { name: "Portree", lat: 57.41247, long: -6.19602 },
@@ -117,7 +117,7 @@ var markers = [
   { name: "Pontevedra", lat: 42.431, long: -8.64435 },
   { name: "Vigo", lat: 42.231358, long: -8.712447 },
   { name: "Puebla de Sanabria", lat: 42.0546898, long: -6.6339736 },
-  { name: "Islas Cíes", lat: 37.8857504, long: -4.8001831 },
+  { name: "Islas Cíes", lat: 42.2236, long: -8.9001 },
   { name: "Chamonix", lat: 45.92375, long: 6.869333 },
   { name: "Ljubljana", lat: 46.05108, long: 14.505751 },
   { name: "Bohinj", lat: 46.28556, long: 13.86194 },
@@ -137,14 +137,14 @@ var markers = [
 var map = L.map("map", {
   center: [51.505, -0.09],
   minZoom: 2,
-  zoom: 1,
+  zoom: 2,
 });
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: ["a", "b", "c", "d"],
-  maxZoom: 20,
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 19,
+  className: "muted-tiles",
 }).addTo(map);
 
 var myURL = jQuery('script[src$="index.js"]')
@@ -167,6 +167,13 @@ for (var i = 0; i < markers.length; ++i) {
 
   /*markerClusters.addLayer(m).addTo(map);*/
 }
+
+map.fitBounds(
+  markers.map(function (m) {
+    return [m.lat, m.long];
+  }),
+  { paddingTopLeft: [20, 40], paddingBottomRight: [20, 20] }
+);
 
 /*
 for ( var i=0; i < markers.length; ++i )

@@ -325,6 +325,10 @@ main a:hover {
     border-radius: 6px;
 }
 
+#map .muted-tiles {
+    filter: grayscale(1) contrast(0.9) brightness(1.05);
+}
+
 .map-caption {
     text-align: right;
     font-size: 0.68em;
